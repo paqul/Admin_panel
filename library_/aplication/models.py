@@ -7,6 +7,9 @@ class Model1(models.Model):
     var2 = models.CharField(max_length=50)
     var3 = models.CharField(max_length=3)
 
+    def __str__(self):
+        return "{var1} {var2} {var3}".format(self.var1, self.var2, self.var3)
+
 
 class Model2(models.Model):
     whole_var = models.ForeignKey(Model1, on_delete=models.DO_NOTHING)

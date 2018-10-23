@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from library_.aplication.views import Model1View #need to fix - not work now
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('model1/', Model1View.as_view())
 ]
