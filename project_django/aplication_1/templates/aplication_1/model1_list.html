@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model1s</title>
+</head>
+<body>
+    {% block 'content' %}
+
+    {% for model1 in object_list %}
+
+    <li><a href="{% url 'model2-list' %}">{{model1.var1}}</a></li>
+
+    {% endfor %}
+
+    {% endblock %}
+</body>
+</html>

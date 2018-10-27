@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model1create</title>
+</head>
+<body>
+    {% block 'content' %}
+
+    <!--{% for model1 in object_list %}-->
+
+     <form method="post">
+         {% csrf_token %}
+         {{ form.as_p }}
+         <button type="submit">Submit</button>
+     </form>
+
+    <!--{% endfor %}-->
+
+    {% endblock %}
+</body>
+</html>
