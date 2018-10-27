@@ -1,0 +1,4 @@
+Django==2.1.2
+django-configuration==0.0.3
+django-polymorphic==2.0.3
+pytz==2018.6
